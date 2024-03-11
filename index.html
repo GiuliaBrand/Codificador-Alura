@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador da Giulia</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="https://www.alura.com.br/"><img src="imagens/Group 3 (2).png" alt="logo da Alura"></a>
+    </header>
+
+    <main class="container">
+        <section class="selecao__esquerda">
+            <textarea id="entrada-mensagem" placeholder="Digite sua mensagem aqui..."></textarea>
+            <h3 class="informacao__atencao"><ion-icon name="alert-circle-outline"></ion-icon>Apenas letras minúsculas e sem acento.</h3>
+            <div class="botoes__esquerda">
+                <button class="estilo__botoes" id="criptografar" onclick="bntCrip()">Criptografar</button>
+                <button class="estilo__botoes" id="descriptografar" onclick="bntDesc()">Descriptografar</button>
+                <button class="estilo__botoes" id="bntLimparCampo" onclick="bntLimpar()">Limpar campo</button>
+            </div>
+        </section>
+
+        <section class="selecao__direita">
+
+            <textarea id="saida-mensagem" placeholder="Sua mensagem aparecerá aqui..."></textarea>
+            <div class="botao__direita">
+                <button class="estilo__botoes__cop" id="bntCopiar" onclick="bntCopiar()">Copiar</button>
+            </div>
+
+        </section>
+
+    <script src="script.js"></script>
+
+    </main>
+
+    <footer class="rodape">
+        <h4>Desenvolvido por Giulia Brandão.</h4>
+        <a class="rodape__redes" href="https://github.com/GiuliaBrand"><ion-icon name="logo-github"></ion-icon>Github</a>
+        <a class="rodape__redes" href="https://www.linkedin.com/in/giulia-brand%C3%A3o-lopes-de-siqueira/"><ion-icon name="logo-linkedin"></ion-icon>Linkedin</a>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
